@@ -2,7 +2,7 @@ A Next.js app built to store recipes on a website.
 
 ## How it works
 
-1. Go to Contentful
+1. Go to Contentful, click on the content tab and add a new entry.
 
 2. Fill in your recipe title and upload your image
    ![image](https://github.com/user-attachments/assets/15149242-d32e-42eb-8eee-423ef948c5c8)
