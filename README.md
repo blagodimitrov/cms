@@ -1,9 +1,18 @@
-This is the Next.js starter site (and course files) for the Next.js & Contentful tutorial by the Net Ninja.
+A Next.js app built to store recipes on a website.
 
-## Getting Started
+## How it works
 
-To use the starter project, run the following in a terminal:
+1. Go to Contentful
 
-```bash
-npx create-next-app [your-site-name] -e https://github.com/iamshaunjp/next-contentful/tree/lesson-1-starter-site
-```
+2. Fill in your recipe title and upload your image
+   ![image](https://github.com/user-attachments/assets/15149242-d32e-42eb-8eee-423ef948c5c8)
+
+3. Add in your ingredients, cooking time and format your instructions.
+   ![image](https://github.com/user-attachments/assets/e58f3aa4-2745-4a00-8bcc-22c91218b638)
+
+4. Refresh the web page.
+   ![image](https://github.com/user-attachments/assets/fa0bdb31-8347-4f1d-8fe4-bccd394d44eb)
+
+Now you have successfully added a new recipe!
+
+Built using the help of Net Ninja's Contentful/NextJS tutorial: https://www.youtube.com/watch?v=m9mNsYJbkNg&list=PL4cUxeGkcC9jClk8wl1yJcN3Zlrr8YSA1
