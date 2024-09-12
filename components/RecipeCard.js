@@ -17,7 +17,9 @@ export default function RecipeCard({ recipe }) {
         <div className="content">
           <div className="info">
             <h4>{title}</h4>
-            <p>Takes approx {cookingTime} mins to make</p>
+            <p>
+              Takes approx <strong>{cookingTime}</strong> mins to make
+            </p>
           </div>
           <div className="actions">
             <a>Cook this</a>
@@ -28,6 +30,7 @@ export default function RecipeCard({ recipe }) {
           .card {
             transform: rotateZ(-1deg);
             cursor: pointer;
+            width: 80%;
           }
           .content {
             background: #fff;

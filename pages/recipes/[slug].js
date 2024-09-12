@@ -52,7 +52,7 @@ export default function RecipeDetails({ recipe }) {
   const { featuredImage, title, cookingTime, ingredients, method } =
     recipe.fields;
   return (
-    <div>
+    <div className="page">
       <div className="banner">
         <Image
           src={"https:" + featuredImage.fields.file.url}
@@ -63,7 +63,7 @@ export default function RecipeDetails({ recipe }) {
       </div>
 
       <div className="info">
-        <p>Takes approx {cookingTime} mins to make</p>
+        <p>🕒 Takes approx {cookingTime} mins to make</p>
         <h3>Ingredients</h3>
         {ingredients.map((ing) => (
           <span key={ing}>{ing}</span>
@@ -75,12 +75,19 @@ export default function RecipeDetails({ recipe }) {
         <div>{documentToReactComponents(method)}</div>
       </div>
       <style jsx>{`
+        .page {
+          background: white;
+          padding: 2rem;
+          transform: rotateZ(-0.5deg);
+        }
+
         h2,
         h3 {
           text-transform: uppercase;
         }
         .banner h2 {
           margin: 0;
+          margin-bottom: -1rem;
           background: #fff;
           display: inline-block;
           padding: 20px;

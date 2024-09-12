@@ -14,5 +14,3 @@ A Next.js app built to store recipes on a website.
    ![image](https://github.com/user-attachments/assets/fa0bdb31-8347-4f1d-8fe4-bccd394d44eb)
 
 Now you have successfully added a new recipe!
-
-Built using the help of Net Ninja's Contentful/NextJS tutorial: https://www.youtube.com/watch?v=m9mNsYJbkNg&list=PL4cUxeGkcC9jClk8wl1yJcN3Zlrr8YSA1
