@@ -5,17 +5,19 @@ export default function Layout({ children }) {
     <div className="layout">
       <header>
         <Link href="/">
-          <a>
+          <div>
+            {" "}
+            {/* Wrap the content in a single div */}
             <h1>
               <span>Blago's</span>
               <span>Cooking</span>
             </h1>
             <h2>Blog</h2>
-          </a>
+          </div>
         </Link>
       </header>
 
-      <div className="page-content">{children}</div>
+      <main className="page-content">{children}</main>
 
       <footer>
         <p>Copyright 2024 @ Blagovest Dimitrov</p>

@@ -1,5 +1,10 @@
 import { createClient } from "contentful";
-import RecipeCard from "../components/RecipeCard";
+import dynamic from "next/dynamic";
+
+// Dynamically import RecipeCard with SSR disabled
+const DynamicRecipeCard = dynamic(() => import("../components/RecipeCard"), {
+  ssr: false,
+});
 
 export async function getStaticProps() {
   const client = createClient({
@@ -23,7 +28,9 @@ export default function Recipes({ recipes }) {
   return (
     <div className="recipe-list">
       {recipes.map((recipe) => (
-        <RecipeCard key={recipe.sys.id} recipe={recipe} />
+        <div className="m-5">
+          <DynamicRecipeCard key={recipe.sys.id} recipe={recipe} />
+        </div>
       ))}
 
       <style jsx>{`
